@@ -31,6 +31,6 @@ New programming language in 2024 that you can try!
 ## Description
 
 ## Other
-(Function)[function.md]
-(How to use)[how-to-use.md]
-(Developer)[developer.md]
+[Function](function.md)
+[How to use](how-to-use.md)
+[Developer](developer.md)
