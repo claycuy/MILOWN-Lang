@@ -6,6 +6,6 @@ MILOWN-Lang is a new programming language, developed by people from Indonesia.
 And this programming language was developed with JavaScript programming. and MILLON-Lang can be used to develop websites.
 
 ## Other
-[Function](function.md)
-[How to use](how-to-use.md)
-[Developer](developer.md)
+- [How to use](how-to-use.md)
+- [Function](function.md)
+- [Developer](developer.md)
