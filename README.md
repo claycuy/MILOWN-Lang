@@ -9,4 +9,3 @@ And this programming language was developed with JavaScript programming. and MIL
 - [How to use](how-to-use.md)
 - [Function](function.md)
 - [Developer](developer.md)
-- [Information](information.html)
