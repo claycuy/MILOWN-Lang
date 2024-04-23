@@ -38,13 +38,16 @@ step (name === "john") {
 ```
 #### Interaction
 ###### User Interaction:
+```
 // alert("hello world");
 toast("hello world");
 // prompt("your name");
 toast.input("your name");
 // confirm("confirmation");
 toast.confirm("confirmation");
+```
 ###### Logging/Debugging:
+```
 // console.info("hello world");
 toast.info("hello world");
 // console.log("hello world");
