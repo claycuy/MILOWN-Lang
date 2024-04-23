@@ -79,4 +79,5 @@ take.sessionData(key, value);
 ```%``` : modulus  
 ```++``` : increments  
 ```--``` : decrement  
-
+###### Comparison operations:
+```==: or ===:``` : together with  ```!=: or !==:``` : not equal to
