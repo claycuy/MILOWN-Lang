@@ -55,3 +55,18 @@ toast.log("hello world");
 // console.error("hello world");
 toast.error("hello world");
 ```
+#### Storage:
+###### Data Storage
+```
+// localStorage.setItem(key, value);
+create.localData(key, value);
+// sessionStorage.setItem(key, value);
+create.sessionData(key, value);
+```
+###### Data Retrieval
+```
+// localStorage.getItem(key, value);
+take.localData(key, value);
+// sessionStorage.getItem(key, value);
+take.sessionData(key, value);
+```
