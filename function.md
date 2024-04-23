@@ -18,6 +18,7 @@ constant name = "john";
 #### Condition
 ```
 /*
+
 if (name === "john") {
   console.log("your name is john");
 } else if (name === "dave") {
