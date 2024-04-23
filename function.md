@@ -75,13 +75,25 @@ take.sessionData(key, value);
 /*
 document.addEventListener('keydown', function(event) {
     if (event.key === 'Enter') {
-      toast("The enter button has been clicked");
+      toast.log("The enter button has been clicked");
     }
   });
 */  
 run.key("Enter", function() {
-toast.log("enter was clicked");
+toast.log("The enter button has been clicked");
 });
+```
+```
+/*
+document.addEventListener('mousedown',function (event) {
+    if (event.button === 0) {
+      toast.log("Left click on the mouse is pressed");
+    }
+  });
+run.mouse(0, function() {
+toast.log("Left click on the mouse is pressed");
+});
+*/
 ```
 #### Operation
 ###### Arithmetic Operations:
