@@ -86,3 +86,7 @@ take.sessionData(key, value);
 ```>``` : more than  
 ```<=:``` : less than or equal to  
 ```>=:``` : more than or equal to
+###### Logic operations:
+```&&``` : and  
+```||``` : or  
+```!``` : not  
