@@ -70,3 +70,7 @@ take.localData(key, value);
 // sessionStorage.getItem(key, value);
 take.sessionData(key, value);
 ```
+#### Operation
+###### Arithmetic Operations:
+'''+``` : summation
+'''-``` : subtraction
