@@ -80,4 +80,7 @@ take.sessionData(key, value);
 ```++``` : increments  
 ```--``` : decrement  
 ###### Comparison operations:
-```==: or ===:``` : together with  ```!=: or !==:``` : not equal to
+```==: or ===:``` : together with  
+```!=: or !==:``` : not equal to
+```<``` : less than or equal to  
+```>``` : more than or equal to
