@@ -27,7 +27,7 @@ if (name === "john") {
 } else {
   console.log("your name is wrong");
 }
-*/
+*/  
 step (name === "john") {
   toast.log("your name is john");
 } next (name === "dave") {
@@ -69,6 +69,19 @@ create.sessionData(key, value);
 take.localData(key, value);
 // sessionStorage.getItem(key, value);
 take.sessionData(key, value);
+```
+#### Callback functions
+```
+/*
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'Enter') {
+      toast("The enter button has been clicked");
+    }
+  });
+*/  
+run.key("Enter", function() {
+toast.log("enter was clicked");
+});
 ```
 #### Operation
 ###### Arithmetic Operations:
