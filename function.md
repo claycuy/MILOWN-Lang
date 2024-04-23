@@ -72,5 +72,5 @@ take.sessionData(key, value);
 ```
 #### Operation
 ###### Arithmetic Operations:
-```+``` : summation
+```+``` : summation\n
 ```-``` : subtraction
