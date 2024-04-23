@@ -84,3 +84,5 @@ take.sessionData(key, value);
 ```!=: or !==:``` : not equal to  
 ```<``` : less than  
 ```>``` : more than  
+```<=:``` : less than or equal to  
+```>=:``` : more than or equal to
