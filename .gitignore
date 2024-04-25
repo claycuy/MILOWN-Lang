@@ -1,6 +1,2 @@
-.how-to-use.md
-.function.md
-.about.md
-.developer.md
-.english-version.md
-.indonesian-version.md
+# Ignore function.md file
+function.md
