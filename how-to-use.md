@@ -8,4 +8,4 @@
 #### Step 2
 > after you copy the script tag which contains the MILOWN-Lang cdn link. You have to paste it in your html.
 
-> Don't you know the [function](function.md) of MILOWN-Lang?
+Don't you know the [function](function.md) of MILOWN-Lang?
