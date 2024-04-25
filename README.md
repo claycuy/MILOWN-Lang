@@ -1,5 +1,5 @@
 # MILOWN-Lang
-=> New programming language in 2024 that you can try!
+> New programming language in 2024 that you can try!
 
 ## Description
 MILOWN-Lang is a new programming language, developed by people from Indonesia.
