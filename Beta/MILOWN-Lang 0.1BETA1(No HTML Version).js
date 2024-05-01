@@ -2,12 +2,13 @@ const fs = require('fs');
 const vm = require('vm');
 
 const locate = 'script.milown';
-const end = locate.substring(src.lastIndexOf('.') + 1);
+const end = locate.substring(locate.lastIndexOf('.') + 1);
 if (locate.endsWith('.milown') || locate.endsWith('.milown-lang')) {
   let code = '';
 const command = fs.readFileSync(locate, 'utf-8');
 code = command;
 
+let toast = {};
 code = code.replace(/\*\*/g, '//');
 code = code.replace(/\#\*/g, '/*');
 code = code.replace(/\*\#/g, '*/');
@@ -25,13 +26,13 @@ code = code.replace(/\}next\(/g, '}else if(');
 code = code.replace(/\} next \(/g, '} else if (');
 code = code.replace(/\}stepout\{/g, '}else{');
 code = code.replace(/\} stepout \{/g, '} else {');
-code + code.replace(/toast\("([a-zA-Z0-9 ]+)"\)/g, (match, p1) => `alert("${p1}")`);
-code + code.replace(/toast.input\("([a-zA-Z0-9 ]+)"\)/g, (match, p1) => `prompt("${p1}")`);
-code + code.replace(/toast.comfirm\("([a-zA-Z0-9 ]+)"\)/g, (match, p1) => `confirm("${p1}")`);
-code + code.replace(/toast.log\("([a-zA-Z0-9 ]+)"\)/g, (match, p1) => `consold.log("${p1}")`);
-code + code.replace(/toast.info\("([a-zA-Z0-9 ]+)"\)/g, (match, p1) => `console.info("${p1}")`);
-code + code.replace(/toast.error\("([a-zA-Z0-9 ]+)"\)/g, (match, p1) => `console.error("${p1}")`);
-code + code.replace(/toast.warning\("([a-zA-Z0-9 ]+)"\)/g, (match, p1) => `toast.warn("${p1}")`);
+code = code.replace(/toast\(/g, 'alert(');
+code = code.replace(/toast.input\(/g, 'prompt(');
+code = code.replace(/toast.comfirm\(/g, 'confirm(');
+code = code.replace(/toast.log\(/g, 'console.log(');
+code = code.replace(/toast.info\(/g, 'console.info(');
+code = code.replace(/toast.error\(/g, 'console.error(');
+code = code.replace(/toast.warning\(/g, 'toast.warn(');
 code = code.replace(/mutable ([a-zA-Z]+)/g, (match, p1) => `let ${p1}`);
 code = code.replace(/variable ([a-zA-Z]+)/g, (match, p1) => `var ${p1}`);
 code = code.replace(/constant ([a-zA-Z]+)/g, (match, p1) => `const ${p1}`);
@@ -45,6 +46,7 @@ code = code.replace(/math\.devide\((\d+) \/ (\d+)\)/g, (match, p1, p2) => `${p1}
 code = code.replace(/get\.date\(([a-zA-Z]+): date \+ month \+ year\)/g, (match, p1) => `${p1}` + ".getDate() + '/' + (" + `${p1}` + ".getMonth() + 1) + '/' +" + `${p1}` + ".getFullYear()");
 code = code.replace(/get\.clock\(([a-zA-Z]+): hour \+ minute \+ second\)/g, (match, p1) => `${p1}` + ".getHours() + ':' + " + `${p1}` + ".getMinutes() + ':' + " + `${p1}` + ".getSeconds()");
 
+let run = {};
 run.loop = function runLoop(time, loop, action) {
   for (let i = 0; i < loop; i++) { // Perbaiki loop
     setTimeout(function() {
