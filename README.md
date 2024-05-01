@@ -1,4 +1,3 @@
-[Link ke GitHub Page Saya](https://github.com/nama-akun-anda)
 ````
      $$$$$$$$$$$$$$$$$$
    $$$$$   $$$$$$  $$$$$
