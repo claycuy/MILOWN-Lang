@@ -1,0 +1,9 @@
+{
+    "scripts": {
+        "test": "node index.js",
+        "translate": "node translate.js"
+    },
+    "bin": {
+        "milown": "./Beta/MILOWN-Lang 0.1BETA1.js"
+    }
+}
