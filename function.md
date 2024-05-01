@@ -30,7 +30,7 @@ step (name === "john") {
   toast.log("your name is john");
 } next (name === "dave") {
   toast.log("your name is dave");
-} else {
+} stepout {
   toast.log("your name is wrong");
 }
 ```
