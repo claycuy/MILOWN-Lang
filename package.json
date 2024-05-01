@@ -1,9 +1,14 @@
 {
+    "name": "MILOWN-Lang",
+    "version": "0.0.1",
+    "description": "This is new Programming Language.",
     "scripts": {
         "test": "node index.js",
         "translate": "node translate.js"
     },
     "bin": {
         "milown": "./Beta/MILOWN-Lang 0.1BETA1.js"
-    }
+    },
+    "author": "UngGasStudio",
+    "license": "MIT"
 }
