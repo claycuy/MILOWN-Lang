@@ -54,14 +54,14 @@ toast.log("hello world");
 toast.error("hello world");
 ```
 #### Storage
-###### Data Storage(Just Support With HTML)
+###### Data Storage(Just Support With HTML):
 ```
 // localStorage.setItem(key, value);
 create.localData(key, value);
 // sessionStorage.setItem(key, value);
 create.sessionData(key, value);
 ```
-###### Data Retrieval(Just Support With HTML)
+###### Data Retrieval(Just Support With HTML):
 ```
 // localStorage.getItem(key, value);
 take.localData(key, value);
