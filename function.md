@@ -112,4 +112,4 @@ toast.log("Left click on the mouse is pressed");
 ###### Logic operations:
 ```&&``` : and  
 ```||``` : or  
-```!``` : not  
+```!!``` : not  
