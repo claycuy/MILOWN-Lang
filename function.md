@@ -113,3 +113,7 @@ toast.log("Left click on the mouse is pressed");
 ```&&``` : and  
 ```||``` : or  
 ```!!``` : not  
+#### Comment
+```**``` : Single row   
+```#* ... *#``` : Multi row   
+```#``` : One word   
