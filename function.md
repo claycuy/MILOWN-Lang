@@ -35,7 +35,7 @@ step (name === "john") {
 }
 ```
 #### Interaction
-###### User Interaction:
+###### User Interaction(Just Support With HTML):
 ```
 // alert("hello world");
 toast("hello world");
@@ -53,22 +53,22 @@ toast.log("hello world");
 // console.error("hello world");
 toast.error("hello world");
 ```
-#### Storage:
-###### Data Storage
+#### Storage
+###### Data Storage(Just Support With HTML)
 ```
 // localStorage.setItem(key, value);
 create.localData(key, value);
 // sessionStorage.setItem(key, value);
 create.sessionData(key, value);
 ```
-###### Data Retrieval
+###### Data Retrieval(Just Support With HTML)
 ```
 // localStorage.getItem(key, value);
 take.localData(key, value);
 // sessionStorage.getItem(key, value);
 take.sessionData(key, value);
 ```
-#### Callback functions
+#### Callback functions(Just Support With HTML)
 ```
 /*
 document.addEventListener('keydown', function(event) {
