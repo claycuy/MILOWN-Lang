@@ -3,12 +3,27 @@
     "version": "0.0.1",
     "description": "This is new Programming Language.",
     "scripts": {
-        "test": "node index.js",
-        "translate": "node translate.js"
+        "test": "node System/index.js $1",
+        "milown/translate": "node System/translate.js $1",
+        "edit-script": "sh -c 'nano $1' --"
+    },
+    "alias": {
+        "test": "npm run test",
+        "milown/translate": "npm run milown/translate",
+        "edit-script": "npm run edit-script"
     },
     "bin": {
-        "milown": "./Beta/MILOWN-Lang 0.1BETA1.js"
+        "milown": "./System/index.js",
+        "milown-translate": "./System/translate.js"
     },
     "author": "UngGasStudio",
-    "license": "MIT"
+    "license": "MIT",
+    "dependencies": {
+        "fs": "^0.0.1-security",
+        "vm": "^0.1.0"
+    },
+    "devDependencies": {
+        "eslint": "^7.32.0",
+        "jest": "^27.5.1"
+    }
 }
