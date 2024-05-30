@@ -88,11 +88,11 @@ document.addEventListener('mousedown',function (event) {
       toast.log("Left click on the mouse is pressed");
     }
   });
+*/
 run.mouse(0, function() {
 toast.log("Left click on the mouse is pressed");
 });
-*/
-```
+``
 #### Operation
 ###### Arithmetic Operations:
 ```+``` : summation  
