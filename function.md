@@ -89,10 +89,10 @@ document.addEventListener('mousedown',function (event) {
     }
   });
 */
-run.mouse(0, function() {
+un.mouse(0, function() {
 toast.log("Left click on the mouse is pressed");
 });
-``
+```
 #### Operation
 ###### Arithmetic Operations:
 ```+``` : summation  
